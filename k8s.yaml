@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: microservicio
+spec:
+  containers:
+    - name: hola-mundo
+      image: susanar1/hola-mundo2:2
