@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: hola-mundo
-          image: susanar1/hola-mundo2:2
+          image: susanar1/hola-mundo2:3
           ports:
             - containerPort: 3000
 apiVersion: v1
