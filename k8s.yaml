@@ -45,11 +45,12 @@ spec:
       port: 3000
       targetPort: 3000
 ---
-apiversion: v1
-kind:Secret
+apiVersion: v1
+kind: Secret
 metadata:
   name: microservicio
-data: 
+type: Opaque
+data:
   DATABASE_PASSWORD: c3VwZXJzZWNyZXRvCg==
 
 
