@@ -48,9 +48,10 @@ spec:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: microservicio
-data:
-  DATABASE_PASSWORD: c3VwZXJzZWNyZXRvCg==
+  name: microservicio-secret
+type: Opaque
+stringData:
+  DB_PASSWORD: “SuperSegura”
 
 
             
