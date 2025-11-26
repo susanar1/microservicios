@@ -32,6 +32,18 @@ spec:
           image: susanar1/hola-mundo2:3
           ports:
             - containerPort: 3000
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "300m"
+              memory: "512Mi"
+          envFrom:
+            - configMapRef:
+                name: microservicio
+            - secretRef:
+                name: microservicio
 ---
 apiVersion: v1
 kind: Service
