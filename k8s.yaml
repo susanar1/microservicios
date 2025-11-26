@@ -13,6 +13,7 @@
 apiVersion: apps/v1
 kind: Deployment  
 metadata:
+  namespace: susana
   name: microservicio
   labels:
     app: microservicio
@@ -48,6 +49,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: susana
   name: microservicio
 spec:
   selector:
@@ -60,6 +62,7 @@ spec:
 apiVersion: v1
 kind: ConfigMap
 metadata:
+  namespace: susana
   name: microservicio
 data:
   LOG_LEVEL: debug
@@ -67,6 +70,7 @@ data:
 apiVersion: v1
 kind: Secret
 metadata:
+  namespace: susana
   name: microservicio
 data:
   DATABASE_PASSWORD: U3VwZXJTZWd1cm8yMDI1
@@ -74,6 +78,7 @@ data:
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
+  namespace: susana
   name: microservicio
 spec:
   scaleTargetRef:
