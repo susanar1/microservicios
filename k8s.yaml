@@ -49,7 +49,6 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: microservicio
-type: Opaque
 data:
   DATABASE_PASSWORD: c3VwZXJzZWNyZXRvCg==
 
